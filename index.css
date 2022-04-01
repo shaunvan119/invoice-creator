@@ -1,0 +1,90 @@
+
+body {
+   font-family: 'Inter', sans-serif; 
+}
+
+
+.header {
+height: 190px;
+width: 550px;
+left: 0px;
+top: 0px;
+border-radius: 0px;
+background-color: #3A69D2;
+}
+
+.background-box {
+height: 719px;
+width: 550px;
+left: 155px;
+top: 959px;
+border-radius: 0px;
+background: #1F2937;
+}
+
+.heading  {
+position: absolute;
+width: 354px;
+height: 40px;
+left: 98px;
+top: 35px;
+font-style: normal;
+font-size: 20px;
+line-height: 40px;
+text-align: center;
+letter-spacing: -0.02em;
+color: #2B283A;
+}
+
+
+.supporting-text {
+
+font-size: 16px;
+font-weight: 400;
+line-height: 5px;
+letter-spacing: 0em;
+color: #2B283A;
+
+}
+
+.button-collection  {
+position: absolute;
+width: 439px;
+height: 45px;
+left: 55.5px;
+top: 227px;
+
+}
+
+.button-collection button {
+
+width: 143.17px;
+height: 45px;
+top: 227px;
+background: #FFFFFF;
+border: 1px solid #D5D4D8;
+box-sizing: border-box;
+border-radius: 7px;
+
+}
+
+.task-total {
+position: absolute;
+width: 95px;
+height: 22px;
+left: 39px;
+top: 315px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 20px;
+/* or 167% */
+
+
+color: #918E9B;
+
+}
+
+
