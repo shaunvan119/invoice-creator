@@ -4,8 +4,15 @@ const weedBtn = document.getElementById("Weeds")
 const sendBtn = document.getElementById("send-invoice")
 
 
+
+//function washFunction() {
+    //let totalWashAmount = document.getElementById("wash").value;
+   // document.getElementById("total-wash").innerHTML = totalWashAmount;
+//}
+
 washBtn.addEventListener("click", function() {
-    console.log("click")
+    let totalWashAmount = document.getElementById("wash").value;
+    document.getElementById("total-wash").innerHTML = totalWashAmount;
 })
 
 mowBtn.addEventListener("click", function() {
@@ -17,7 +24,7 @@ weedBtn.addEventListener("click", function() {
 })
 
 sendBtn.addEventListener("click", function() {
-    console.log("click")
+    sendBtn.innerHTML = "<span style='color:white'>EMAIL SENT</span>";
 })
 
 

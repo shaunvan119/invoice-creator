@@ -203,8 +203,18 @@ font-size: 15px;
 font-weight: 500;
 line-height: 24px;
 letter-spacing: 0em;
+}
 
+.task-list {
+width: 200px;
+font-size: 18px;
+color: #F5F5F5;
+}
 
+.sum-totals {
+    
+font-size: 18px;
+color: #F5F5F5;
 }
 
 
