@@ -189,6 +189,25 @@ background: #3A69D2;
 border-radius: 7px;
 }
 
+.invoice-button img {
+position: absolute;
+left: 172px;
+top: 16px;
+bottom: 16px;
+}
+
+.invoice-button p {
+position: static;
+color: #FFFFFF;
+font-size: 15px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0em;
+
+
+}
+
+
 
 
 
