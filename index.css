@@ -217,7 +217,26 @@ font-size: 18px;
 color: #F5F5F5;
 }
 
+.task-name {
+   
+}
 
+
+.task-price {
+position:relative;
+  top:-1em;
+padding-left: 435px;
+
+
+    
+}
+
+#list-section {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+    
+}
 
 
 
