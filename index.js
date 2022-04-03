@@ -17,6 +17,26 @@ let taskWeedAmount = document.getElementById("Weeds").name
 let totalAmount = document.getElementById("total-dollar")
 
 
+let taskList = [{
+        id: 0,
+        task: "Wash car",
+        price: 10
+    },
+    {
+        id: 1,
+        task: "Mow lawn",
+        price: 20
+    },
+    {
+        id: 2,
+        task: "Pull weeds",
+        price: 30
+    },
+];
+
+let count = 0;
+let listItem;
+
 
 washBtn.addEventListener("click", function() {
     document.getElementById("task-wash-task").innerHTML = taskWashAmount;
@@ -41,6 +61,11 @@ sendBtn.addEventListener("click", function() {
     sendBtn.innerHTML = "<span style='color:white'>EMAIL SENT</span>";
     
 })
+
+
+
+
+
 
 
 
