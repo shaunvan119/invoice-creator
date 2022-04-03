@@ -6,20 +6,7 @@ const sendBtn = document.getElementById("send-invoice")
 let listSection = document.getElementById("list-section")
 let totalAmount = document.getElementById("total-dollar")
 
-//Wash button >> event litener1
-//let totalWashAmount = document.getElementById("wash").value;
-//let taskWashAmount = document.getElementById("wash").name
-//Mow button >> event litener2
-//let totalMowAmount = document.getElementById("Mow").value;
-//let taskMowAmount = document.getElementById("Mow").name
-//Weed button >> event litener3
-//let totalWeedAmount = document.getElementById("Weeds").value;
-//let taskWeedAmount = document.getElementById("Weeds").name
 
-// total amount bottom
-
-
-//Array of the list items to be rendered on the page
 let taskList = [{
         id: 0,
         task: "Wash car",
