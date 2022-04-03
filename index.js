@@ -19,7 +19,7 @@ let totalAmount = document.getElementById("total-dollar")
 // total amount bottom
 
 
-
+//Array of the list items to be rendered on the page
 let taskList = [{
         id: 0,
         task: "Wash car",
@@ -37,6 +37,7 @@ let taskList = [{
     },
 ];
 
+//setting the count to zero for the price 
 let count = 0;
 let listItem;
 
@@ -44,26 +45,16 @@ let listItem;
 
 
 
-
+// button event listeners
 washBtn.addEventListener("click", function() {
-    render(taskList[0]);
-    //document.getElementById("task-wash-task").innerHTML = taskWashAmount;
-    //document.getElementById("total-wash").innerHTML = totalWashAmount;
-    //totalAmount.innerHTML = "$10"
-
+    render(taskList[0]); // render function and accessing index ID 0 with in task list
 })
 
 mowBtn.addEventListener("click", function() {
-    //document.getElementById("task-mow-task").innerHTML = taskMowAmount;
-    //document.getElementById("total-mow").innerHTML = totalMowAmount;
-    //totalAmount.innerHTML = "$30"
     render(taskList[1]);
 })
 
 weedBtn.addEventListener("click", function() {
-    //document.getElementById("task-weeds-task").innerHTML = taskWeedAmount
-    //document.getElementById("total-weeds").innerHTML = totalWeedAmount;
-    //totalAmount.innerHTML = "$60"
     render(taskList[2]);
 })
 
@@ -72,32 +63,22 @@ sendBtn.addEventListener("click", function() {
     
 })
 
-
+// function the renders the task list to the page using template literals
 function render(item) {
-    // Total cost stays updated
-    count += item.price;
-    listItem = document.createElement("li");
+    
+    count += item.price; // adding the total price which is stored in the total amount varible
+    listItem = document.createElement("li"); // creating a html element and storing it in the list item varible
     listItem.innerHTML =
         `<p id="task" id="${item.id}">
         <span class="task-name">${item.task}</span>
         <span class="task-price">$${item.price}</span>
     `;
-    //console.log(listItem)
+    //appending items to the list section
     listSection.appendChild(listItem);
-    // Total cost stays updated
+    // taking the above count varible and rendering to the totalAmount
     totalAmount.textContent = `$${count}`;
-    // Don't charge more than once for the same task
+    
 
-    //look further into the below if statement to check if needed
-    if (item.task === "mow lawn") {
-        mowBtn.disabled = true;
-    }
-    if (item.task === "wash Car") {
-        washBtn.disabled = true;
-    }
-    if (item.task === "pull weeds") {
-        weedBtn.disabled = true;
-    }
 }
 
 
