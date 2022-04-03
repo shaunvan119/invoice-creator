@@ -87,6 +87,8 @@ function render(item) {
     // Total cost stays updated
     totalAmount.textContent = `$${count}`;
     // Don't charge more than once for the same task
+
+    //look further into the below if statement to check if needed
     if (item.task === "mow lawn") {
         mowBtn.disabled = true;
     }
